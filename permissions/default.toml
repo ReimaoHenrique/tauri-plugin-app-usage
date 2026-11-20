@@ -1,0 +1,10 @@
+"$schema" = "schemas/schema.json"
+
+[default]
+description = "Permite consultar o uso de aplicativos no Android. A concessão da permissão especial ainda depende do usuário."
+permissions = [
+  "allow-check-permission",
+  "allow-request-permission",
+  "allow-get-all-app-usage",
+  "allow-get-app-usage",
+]

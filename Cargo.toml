@@ -1,0 +1,23 @@
+[package]
+name = "tauri-plugin-app-usage"
+version = "0.1.0"
+authors = [ "Henrique Reimao" ]
+description = "Tauri 2 plugin para ler o tempo de uso de aplicativos no Android via UsageStatsManager"
+license = "MIT"
+repository = "https://github.com/ReimaoHenrique/tauri-plugin-app-usage"
+documentation = "https://docs.rs/tauri-plugin-app-usage"
+keywords = ["tauri", "android", "usage-stats", "mobile", "plugin"]
+categories = ["api-bindings", "mobile"]
+edition = "2024"
+rust-version = "1.90"
+exclude = ["/examples", "/dist-js", "/guest-js", "/node_modules"]
+
+links = "tauri-plugin-app-usage"
+
+[dependencies]
+tauri = { version = "2.12.7" }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2"
+
+[build-dependencies]
+tauri-plugin = { version = "2.7.4", features = ["build"] }
